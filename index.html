@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinny</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script src="assets/js/index.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="assets/images/Logo-Goth.svg">
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="assets/images/Header-Image-Dinny.jpg" alt="Image of DINNY">
+            <h1><span>DI</span>NN<span>Y</span></h1>
+            <nav>
+                <a href="">About Dinny</a>
+                <a href="">The Staff</a>
+                <a href="">Delivery</a>
+                <a href="">Gallery</a>
+                <div id="bookingBlue">
+                    <a id="booking" href="">Book a Table</a>
+                </div>
+            </nav>
+            <div id="myModal">
+                <h2>Book a Table!</h2>
+                <img id="closeButton" src="assets/images/close-circle-svgrepo-com (2).svg" alt="">
+                <form id="myForm">
+                    <h3>People:</h3>
+                    <select name="selection" id="selections">
+                        <option value="0" disabled selected>Please pick amount</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                    <div class="nextTo">
+                        <h3>Date:</h3>
+                        <input type="date" id="date">
+                        <h3>Time:</h3>
+                        <select name="time" id="times">
+                            <option value="1" disabled selected>Please pick a time</option>
+                            <option value="17.00">17.00</option>
+                            <option value="17.15">17.15</option>
+                            <option value="17.30">17.30</option>
+                            <option value="17.45">17.45</option>
+                            <option value="18.00">18.00</option>
+                            <option value="18.15">18.15</option>
+                            <option value="18.30">18.30</option>
+                            <option value="18.45">18.45</option>
+                            <option value="19.00">19.00</option>
+                            <option value="19.15">19.15</option>
+                            <option value="19.30">19.30</option>
+                            <option value="19.45">19.45</option>
+                            <option value="20.00">20.00</option>
+                            <option value="20.15">20.15</option>
+                            <option value="20.30">20.30</option>
+                            <option value="20.45">20.45</option>
+                            <option value="21.00">21.00</option>
+                        </select>
+                    </div>
+                    <h3>Name</h3>
+                    <input type="text" id="name" placeholder="Your Name">
+                    <div id="nameError" class="error"></div>
+                    <h3>Email</h3>
+                    <input type="text" id="email" placeholder="Your Email">
+                    <div id="emailError" class="error"></div>
+                    <h3>Phonenumber</h3>
+                    <input type="text" id="number" placeholder="Your Phonenumber">
+                    <div id="numberError" class="error"></div>
+                    <button id="Confirm">Confirm Booking</button>
+                </form>
+            </div>
+        </header>
+        <section id="aboutSection">
+            <article id="aboutArticle">
+                <h2>About Dinny</h2>
+                <img src="assets/images/Staff-01.jpg" alt="Dinny Staff">
+                <h3>More About Dinny</h3>
+                <p>Velkommen til vores hjertevarme oase for madelskere! Vores restaurant er en skatkiste af smagfulde
+                    oplevelser, hvor du kan fordybe dig i kulinariske eventyr. Fra den varme velkomst ved døren til
+                    duften
+                    af friskbagt brød, der lokker dig mod vores køkken, er hvert øjeblik designet til at forføre dine
+                    sanser.</p>
+                <p>Vi er dedikerede til at forkæle dine smagsløg med kulinariske mesterværker, skabt af vores
+                    passionerede
+                    kokke, der hver dag kombinerer kreativitet og traditionelle teknikker for at levere en gastronomisk
+                    oplevelse ud over det sædvanlige. Vores menu er en hyldest til lokale råvarer og sæsonens friskhed,
+                    hvilket sikrer, at hvert bid er en rejse gennem smag og teksturer.</p>
+                <p>Uanset om du ønsker en intime middag for to eller en festlig sammenkomst for en større gruppe,
+                    stræber vi
+                    altid efter at levere en uforglemmelig kulinarisk rejse. Vores passion for madlavning og gæstfrihed
+                    er
+                    drivkraften bag vores engagement i at skabe en unik og mindeværdig oplevelse for hver gæst, der
+                    træder
+                    ind ad vores døre.</p>
+                <div class="toTheRight">
+                    <a href="">Read More:</a>
+                </div>
+            </article>
+        </section>
+        <h2>The Staff</h2>
+        <section id="staffSection">
+
+            <section id="staffSectionOne">
+                <img src="assets/images/Staff-02.jpg" alt="Dinny Staff">
+                <section>
+                    <h3>Staff One</h3>
+                    <p>Kom og del et øjeblik af gastronomisk glæde med os, lad os vække dine smagsløg og forkæle dig med
+                        en
+                        uforglemmelig smagsoplevelse, der vil efterlade dig med ønsket om at vende tilbage igen og igen.
+                    </p>
+                    <p>I vores restaurant stræber vi efter at forene det bedste fra verden af gastronomi og gæstfrihed.
+                        Vi er
+                        ikke blot et sted, hvor man spiser; vi er et sted, hvor måltider bliver til minder og
+                        smagsoplevelser
+                        bliver til samtaleemner.</p>
+                    <p>Vores køkken er en symfoni af smag, hvor hver ret er nøje sammensat for at skabe en harmoni
+                        mellem
+                        ingredienser og præsentation. Vores kokke er kunstnere, der bruger råvarer som deres lærred og
+                        krydderier som deres pensler, for at skabe kulinariske mesterværker, der pirrer smagsløgene og
+                        vækker
+                        følelser.</p>
+                    <div class="toTheRight">
+                        <a href="">Read More:</a>
+                    </div>
+                </section>
+            </section>
+            <section id="staffSectionTwo">
+                <img src="assets/images/Staff-03.jpg" alt="">
+                <section>
+                    <h3>Staff Two</h3>
+                    <p>Men vores restaurant er ikke kun om mad; det er om fællesskab og forbindelser. Det er om at samle
+                        folk
+                        omkring et bord og dele ikke kun måltider, men også historier, latter og glæde. Vores
+                        passionerede
+                        personale stræber altid efter at skabe en atmosfære, hvor gæster føler sig hjemme og værdsat.
+                    </p>
+                    <p>Uanset om det er en elegant aften med gourmetretter eller en afslappet frokost med venner, er
+                        vores
+                        restaurant det perfekte sted at skabe uforglemmelige øjeblikke. Vi inviterer dig til at tage
+                        plads ved
+                        vores bord og lade os forkæle dig med en gastronomisk rejse, der vil forblive i dine minder
+                        længe efter
+                        det sidste bid er taget.</p>
+                    <p>Træd ind i en verden af dunkle elegancer og forførende smagsoplevelser. Vores restaurant er en
+                        fusion af
+                        goth-inspiration og kulinarisk ekspertise, hvor sort er ikke kun en farve, men en stemning, der
+                        omfavner
+                        vores atmosfære og madoplevelser.</p>
+                    <div class="toTheRight">
+                        <a href="">Read More:</a>
+                    </div>
+                </section>
+            </section>
+            <section id="staffSectionThree">
+                <img src="assets/images/Staff-04.jpg" alt="">
+                <section>
+                    <h3>Staff Three</h3>
+                    <p>Hver detalje i vores restaurant er omhyggeligt designet til at omfavne det gotiske æstetik og
+                        skabe en
+                        stemning af mystik og forfinet dekadence. Fra de smukt udformede lysekroner, der kaster et
+                        subtilt lys
+                        over vores lokaler, til møblementet, der kombinerer vintage elegance med moderne kant, er vores
+                        rum en
+                        unik oase af atmosfære og stemning.</p>
+                    <p>På vores menu finder du ikke kun delikate retter, men snarere kunstværker, hvor råvarer og
+                        krydderier
+                        spiller sammen for at skabe en symfoni af smag. Vores dygtige kokke har skabt en unik blanding
+                        af
+                        klassiske retter med en gotisk tvist, der tilføjer en dybde af karakter og overraskelse til
+                        hvert
+                        måltid.</p>
+                    <p>Vores dedikerede personale er ikke blot tjenere; de er guider til denne kulinariske rejse gennem
+                        skyggerne. De er passionerede om at dele historierne bag vores retter og skabe en stemning af
+                        mysterium
+                        og nysgerrighed omkring hvert måltid.</p>
+                    <div class="toTheRight">
+                        <a href="">Read More:</a>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <section id="deliverySection">
+            <h2>Delivery</h2>
+            <section id="dontMoveSection">
+                <img src="assets/images/Delivery.jpg" alt="">
+                <section>
+                    <h3>Don't Move an Inch!</h3>
+                    <p>Velkommen til vores gotiske kulinariske univers, bragt direkte til dig med vores
+                        leveringsservice. Lad
+                        dig fortrylle af de dunkle og forførende smagsoplevelser, som vores køkken skaber, uden at
+                        forlade
+                        komforten i dit eget hjem.</p>
+                    <p>Vores leveringsservice er ikke blot en bekvemmelighed; det er en rejse ind i en verden af mystik
+                        og
+                        gastronomisk eventyr. Fra det øjeblik, du åbner den elegante, sort-forgyldte emballage, vil du
+                        opleve
+                        vores menu, der er skabt med omhu og passion.</p>
+                    <p>Vores retter, med deres gotiske tvist, er udført med præcision og kreativitet af vores dygtige
+                        kokke.
+                        Hver bid er en oplevelse af kontrasterende smagsoplevelser, der omfavner det dunkle og det
+                        forførende.
+                    </p>
+                    <p>Vores dedikerede leveringsteam er ikke bare bærere af måltider; de er kurèrer af stemning og
+                        historier.
+                        De leverer ikke blot mad, men en oplevelse. Med deres delte passion for vores koncept og menu er
+                        de klar
+                        til at bringe vores gotiske æstetik og fortryllende smagsoplevelser lige til din dørtrin.</p>
+                    <div class="toTheRight">
+                        <a href="">Order:</a>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <section id="gallerySection">
+            <h2>Dinny Gallery</h2>
+            <section id="myGallery">
+                <div class="image-container">
+                    <img src="assets/images/Dinny-01.jpg" alt="">
+                    <article>
+                        <h3>Gallery One</h3>
+                        <p>Velkommen til vores gotiske kulinariske univers, bragt direkte til dig med vores
+                            leveringsservice. Lad
+                            dig fortrylle af de dunkle og forførende smagsoplevelser, som vores køkken skaber, uden at
+                            forlade
+                            komforten i dit eget hjem.</p>
+                        <div class="toTheRight">
+                            <a href="">More:</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="image-container">
+                    <img src="assets/images/Dinny-02.jpg" alt="">
+                    <article>
+                        <h3>Gallery Two</h3>
+                        <p>Velkommen til vores gotiske kulinariske univers, bragt direkte til dig med vores
+                            leveringsservice. Lad
+                            dig fortrylle af de dunkle og forførende smagsoplevelser, som vores køkken skaber, uden at
+                            forlade
+                            komforten i dit eget hjem.</p>
+                        <div class="toTheRight">
+                            <a href="">More:</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="image-container">
+                    <img src="assets/images/Dinny-03.jpg" alt="">
+                    <article>
+                        <h3>Gallery Three</h3>
+                        <p>Velkommen til vores gotiske kulinariske univers, bragt direkte til dig med vores
+                            leveringsservice. Lad
+                            dig fortrylle af de dunkle og forførende smagsoplevelser, som vores køkken skaber, uden at
+                            forlade
+                            komforten i dit eget hjem.</p>
+                        <div class="toTheRight">
+                            <a href="">More:</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="image-container">
+                    <img src="assets/images/Dinny-04.jpg" alt="">
+                    <article>
+                        <h3>Gallery Four</h3>
+                        <p>Velkommen til vores gotiske kulinariske univers, bragt direkte til dig med vores
+                            leveringsservice. Lad
+                            dig fortrylle af de dunkle og forførende smagsoplevelser, som vores køkken skaber, uden at
+                            forlade
+                            komforten i dit eget hjem.</p>
+                        <div class="toTheRight">
+                            <a href="">More:</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="image-container">
+                    <img src="assets/images/Dinny-05.jpg" alt="">
+                    <article>
+                        <h3>Gallery Five</h3>
+                        <p>Velkommen til vores gotiske kulinariske univers, bragt direkte til dig med vores
+                            leveringsservice. Lad
+                            dig fortrylle af de dunkle og forførende smagsoplevelser, som vores køkken skaber, uden at
+                            forlade
+                            komforten i dit eget hjem.</p>
+                        <div class="toTheRight">
+                            <a href="">More:</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="image-container">
+                    <img src="assets/images/Dinny-06.jpg" alt="">
+                    <article>
+                        <h3>Gallery Six</h3>
+                        <p>Velkommen til vores gotiske kulinariske univers, bragt direkte til dig med vores
+                            leveringsservice. Lad
+                            dig fortrylle af de dunkle og forførende smagsoplevelser, som vores køkken skaber, uden at
+                            forlade
+                            komforten i dit eget hjem.</p>
+                        <div class="toTheRight">
+                            <a href="">More:</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="image-container">
+                    <img src="assets/images/Dinny-07.jpg" alt="">
+                    <article>
+                        <h3>Gallery Seven</h3>
+                        <p>Velkommen til vores gotiske kulinariske univers, bragt direkte til dig med vores
+                            leveringsservice. Lad
+                            dig fortrylle af de dunkle og forførende smagsoplevelser, som vores køkken skaber, uden at
+                            forlade
+                            komforten i dit eget hjem.</p>
+                        <div class="toTheRight">
+                            <a href="">More:</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="image-container">
+                    <img src="assets/images/Dinny-08.jpg" alt="">
+                    <article>
+                        <h3>Gallery Eight</h3>
+                        <p>Velkommen til vores gotiske kulinariske univers, bragt direkte til dig med vores
+                            leveringsservice. Lad
+                            dig fortrylle af de dunkle og forførende smagsoplevelser, som vores køkken skaber, uden at
+                            forlade
+                            komforten i dit eget hjem.</p>
+                        <div class="toTheRight">
+                            <a href="">More:</a>
+                        </div>
+                    </article>
+                </div>
+
+            </section>
+        </section>
+        <footer>
+            <section id="grid">
+                <section id="mapSection">
+                    <h4>Pin Down Dinny</h4>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2170.110539288575!2d9.95342!3d57.049647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464932b956a4743d%3A0x409702a55dc059d1!2sGasv%C3%A6rksvej%2C%209000%20Aalborg!5e0!3m2!1sen!2sdk!4v1701852049920!5m2!1sen!2sdk"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+                <section id="infoSection">
+                    <h4>Adress Header</h4>
+                    <p>Roadname, number</p>
+                    <p>ZipCode City Name</p>
+                    <p>+45 1122 3344</p>
+                    <p>mail@dinny.com</p>
+                    <h5>Information:</h4>
+                        <p>1234567891011</p>
+                        <p>CVR: 12345678910</p>
+                </section>
+            </section>
+        </footer>
+    </main>
+</body>
+
+</html>

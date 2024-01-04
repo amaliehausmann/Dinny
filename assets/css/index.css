@@ -1,0 +1,748 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+:root{
+    --darkGrey: #212121;
+    --lightGrey: #333333;
+    --orange: #e85217;
+    --blue: #3199f4;
+    --whiteish: #c2c2c2;
+    --links: #909090;
+    --red: #c22318;
+    --white: #f3f3f3;
+}
+/* 
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Smooch Sans', sans-serif; */
+
+/* BODY */
+body{
+    margin: 0;
+    background-color: var(--darkGrey);
+}
+
+/* HEADER */
+header{
+    position: relative;
+}
+
+header img{
+    width: 100%;
+}
+
+h1{
+    color: var(--darkGrey);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22vw;
+    font-weight: 400;
+    position: absolute;
+    top: 27.5%;
+    left: 2%;
+    background-color: var(--white);
+    padding: 0 5vw;
+    height: 25vw;
+    margin: 0;
+    border: solid black 1vw;
+}
+
+h1 span{
+    color: var(--red);
+}
+
+nav a{
+    display: flex;
+    flex-direction: column;
+    padding: 3vw 3vw;
+    margin-top: -1.2vw;
+    color: var(--orange);
+    text-decoration: none;
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 6vw;
+    font-weight: 500;
+}
+
+#booking{
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+#booking:hover{
+    background-color: var(--orange);
+}
+
+nav a:hover {
+    color: var(--blue);
+}
+
+nav{
+    background-color: var(--lightGrey);
+}
+
+/* Modal */
+
+#myModal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    background-color: var(--lightGrey);
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 8px var(--darkGrey) solid;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1vw;
+}
+
+#myModal img{
+    width: 10%;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+}
+
+#myModal h2{
+    display: flex;
+    justify-content: center;
+    font-size: 10vw;
+}
+
+#myModal h3{
+    margin: 0;
+    display: flex;
+    justify-content: left;
+    margin-top: 1vw;
+    font-size: 5vw;
+}
+
+.nextTo{
+display: flex;
+flex-direction: row;
+}
+
+.nextTo h3{
+    padding: 0 1vw;
+    padding-left: 0.5vw;
+}
+
+input, #selections, #times{
+    margin-top: 0.5vw;
+    background-color: transparent;
+    color: var(--orange);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4vw;
+}
+
+#date, #times{
+    height: 5vw;
+    margin-top: 1.2vw;
+}
+
+#Confirm{
+    padding: 0.5vw;
+    width: 50%;
+    margin: auto;
+    margin-top: 2vw;
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4vw;
+}
+
+ #name, #email, #number {
+    width: 70%;
+    margin-left: 0.5vw;
+    color: var(--orange);
+    padding: 0.5vw;
+}
+
+#selections {
+    width: 60%;
+    margin-left: 0.5vw;
+}
+
+::placeholder{
+    color: #e85217;
+}
+
+option{
+    background-color: transparent;
+}
+
+
+
+input{
+    border: var(--orange) 2px solid;
+}
+
+select{
+    border: var(--orange) 2px solid;
+}
+
+.error{
+    background-color: var(--blue);
+    margin: 0.5vw;
+    padding: 0.5vw;
+    border-radius: 10px;
+    width: fit-content;
+    display: none;
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+    font-size: 1.2vw;
+}
+.valid{
+    border: 2px rgb(5, 170, 5) solid;
+}
+
+.invalid{
+    border: 2px red solid;
+}
+
+.thankYou{
+    font-size: 5vw !important;
+    color: var(--blue);
+    text-align: center;
+    margin-bottom: 0.5vw;
+}
+
+.excited{
+    font-size: 4vw !important;
+    margin: auto;
+    display: flex;
+    justify-content: center !important;
+    color: var(--white);
+    margin-bottom: 2vw !important;
+}
+
+
+
+/* ABOUT SECTION */
+h2{
+    color: var(--orange);
+    font-family: 'Smooch Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13vw;
+    margin: 0;
+    margin-left: 3vw;
+}
+
+h3{
+    color: var(--blue);
+    font-family: 'Smooch Sans', sans-serif;
+    font-weight: 400;
+    font-size: 9vw;
+    margin: 4vw;
+    margin-left: 3vw;   
+}
+
+p{
+    color: var(--white);
+    font-family: 'Smooch Sans', sans-serif;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-size: 5.5vw;
+}
+
+.toTheRight a:visited{
+    color: var(--whiteish);
+}
+
+.toTheRight a{
+    color: var(--whiteish);
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 6vw;
+    margin-right: 3vw;
+    padding-bottom: 2vw;
+}
+
+.toTheRight{
+    text-align: right;
+    /* margin-bottom: 5vw; */
+}
+
+
+#aboutSection img{
+    width: 100%;
+}
+
+/* STAFF SECTION */
+#staffSection img{
+    width: 100%;
+    margin-top: 5vw;
+}
+
+#staffSection h2{
+    margin-bottom: -5vw;
+}
+
+/* DELIVERY SECTION */
+#deliverySection img{
+width: 100%;
+}
+
+/* GALLERY SECTION */
+#myGallery img{
+width: 100%;
+}
+
+#myGallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5vw;
+}
+
+#myGallery .image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container article{
+    position: absolute;
+    transition: 500ms ease-in-out;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #212121c8;
+}
+
+.image-container:hover article{
+    top: 0;
+}
+
+/* FOOTER */
+h4{
+    font-family: 'Smooch Sans', sans-serif;
+    color: var(--orange);
+    font-size: 8vw;
+    margin: 2vw 0 0 3vw;
+    font-weight: 400;
+}
+
+iframe{
+    width: 93%;
+    margin-left: 3vw;
+}
+
+footer p{
+    color: var(--blue);
+    margin: 0;
+    margin-left: 3vw;
+}
+
+h5{
+    font-size: 7vw;
+    color: var(--orange);
+    font-family: 'Smooch Sans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    margin-left: 3vw;
+}
+
+footer{
+    margin-bottom: 5vw;
+}
+
+/* MEDIA QUERIES TABLET */
+
+@media (min-width: 900px){
+    
+    /* HEADER */
+
+    header img{
+        z-index: 1;
+    }
+
+    h1{
+        top: 50%;
+    }
+
+    nav a{
+        display: inline-block;
+        font-size: 3vw;
+        padding: 1vw;
+        margin: 0;
+    }
+
+    nav{
+        text-align: right;
+        margin-top: -0.4vw;
+        padding: 0;
+    }
+
+    #booking {
+        padding: 0.99vw;
+    }
+
+    #bookingBlue{
+        display: inline-block;
+    }
+
+    /* ABOUT SECTION */
+    h2{
+        font-size: 9vw;
+    }
+
+    h3{
+        font-size: 4vw;
+        margin: 0;
+        margin-left: 3vw;
+    }
+
+    #aboutSection h3{
+        margin: 3vw;
+    }
+    p{
+        font-size: 1.8vw;
+    }
+
+    .toTheRight a{
+        font-size: 2vw;
+    }
+
+    /* STAFF SECTION */
+
+        #staffSection img{
+            margin-top: 0;
+        }
+
+        #staffSection h2{
+            margin-bottom: 0;
+        }
+
+
+        #staffSectionOne{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 0;
+        }
+
+        #staffSectionTwo{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 0;
+        }
+
+        #staffSectionThree{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 0;
+        }
+/* DELIVERY */
+        #dontMoveSection{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 0;
+        }
+/* GALLERY */
+        #myGallery{
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5vw;
+        }
+
+        /* FOOTER */
+footer{
+    margin-bottom: 1vw;
+}
+
+        #grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        iframe{
+            margin: 1vw;
+            height: 18vw;
+        }
+
+        h4{
+            font-size: 4vw;
+            margin-left: 1vw;
+        }
+
+        h5{
+            font-size: 3vw;
+            margin-left: 1vw;
+        }
+
+        footer p{
+            margin-left: 1vw;
+        }
+}
+
+@media (min-width: 1100px){
+
+    main{
+        max-width: 1280px;
+        margin: auto;
+        border: 2px solid var(--links);
+    }
+
+    
+    /* HEADER */
+    h1{
+        font-size: 9vw;
+        height: 10vw;
+        padding: 0 1vw;
+        top: 67%;
+        left: 1%;
+    }
+
+    nav{
+        text-align: left;
+        height: 3vw;
+    }
+
+    nav a{
+        font-size: 1.2vw;
+        padding: 0 0.5vw;
+        margin-top: 0.8vw;
+    }
+
+    #bookingBlue{
+        margin-top: -2.9vw;
+        padding: 0;
+        display: flex;
+        position: absolute;
+        right: 0;
+    }
+
+    #booking{
+        padding: 0.7vw;
+    }
+
+    /* Modal */
+
+#myModal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    background-color: var(--lightGrey);
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 8px var(--darkGrey) solid;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1vw;
+}
+
+#myModal img{
+    width: 5%;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+}
+
+#myModal h2{
+    display: flex;
+    justify-content: center;
+    font-size: 6vw;
+}
+
+#myModal h3{
+    margin: 0;
+    display: flex;
+    justify-content: left;
+    margin-top: 1vw;
+    font-size: 2vw;
+}
+
+.nextTo{
+display: flex;
+flex-direction: row;
+}
+
+.nextTo h3{
+    padding: 0 1vw;
+    padding-left: 0.5vw;
+}
+
+input, #selections, #times{
+    margin-top: 0.5vw;
+    background-color: transparent;
+    color: var(--orange);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1vw;
+}
+
+#date, #times{
+    height: 2vw;
+    margin-top: 1.2vw;
+}
+
+#Confirm{
+    padding: 0.5vw;
+    width: 50%;
+    margin: auto;
+    margin-top: 2vw;
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5vw;
+}
+
+ #name, #email, #number {
+    width: 70%;
+    margin-left: 0.5vw;
+    color: var(--orange);
+    padding: 0.5vw;
+}
+
+#selections {
+    width: 40%;
+    margin-left: 0.5vw;
+}
+
+::placeholder{
+    color: #e85217;
+}
+
+option{
+    background-color: transparent;
+}
+
+.thankYou{
+    font-size: 2vw !important;
+    color: var(--blue);
+    text-align: center;
+    margin-bottom: 0.5vw;
+}
+
+.excited{
+    font-size: 1.5vw !important;
+    margin: auto;
+    display: flex;
+    justify-content: center !important;
+    color: var(--white);
+    margin-bottom: 2vw !important;
+}
+
+
+
+
+
+    /* ABOUT SECTION */
+
+    h2{
+        margin-left: 0.5vw;
+        font-size: 5vw;
+    }
+
+    h3{
+        padding-left: 0.5vw;
+        margin: 0;
+        font-size: 2vw;
+    }
+
+    p{
+        margin: 1vw 0.5vw;
+        font-size: 1.5vw;
+    }
+
+    #aboutSection img{
+        width: 100%;
+    }
+
+    #aboutSection h3{
+        margin: 0;
+    }
+
+    .toTheRight a {
+        font-size: 1.5vw;
+        margin-right: 0.5vw;
+    }
+
+    /* staff section  */
+    #staffSection {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1vw;
+    }
+
+    #staffSection img{
+        margin-bottom: -1vw;
+        padding-bottom: -1vw;
+    }
+
+    #staffSectionOne {
+        grid-template-columns: 1fr;
+    }
+
+    #staffSectionOne h3{
+        margin-top: -6vw;
+}
+
+    #staffSectionTwo h3{
+        margin-top: -1vw;
+    }
+
+    #staffSectionThree h3{
+        margin-top: 2vw;
+    }
+
+    #staffSectionTwo {
+        grid-template-columns: 1fr;
+    }
+
+    #staffSectionThree {
+        grid-template-columns: 1fr;
+    }
+
+    /* delivery section */
+
+    #dontMoveSection {
+        gap: 1vw;
+    }
+
+    /* gallery section */
+    #myGallery {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1vw;
+    }
+
+    #myGallery p{
+        font-size: 1.2vw;
+    }
+
+    #myGallery a{
+        font-size: 1.2vw;
+    }
+
+    /* footer */
+    h4 {
+        font-size: 3vw;
+        margin-top: 0.5vw;
+    }
+
+    h5{
+        font-size: 2vw;
+    }
+
+    footer p{
+        font-size: 1.5vw;
+    }
+
+    iframe{
+        height: 12.5vw;
+        width: 95%;
+    }
+
+}
